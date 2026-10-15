@@ -606,3 +606,124 @@ Star the repo if you find it useful!
 Let's make healthcare automation more open, transparent, and accessible.
 # Awesome-Healthcare-AI-Automation
 
+# Top Healthcare AI Automation Tools Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Clinical Documentation, Revenue Cycle Automation & Healthcare Intelligence*  
+**Last updated: March 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Healthcare AI Automation**. These tools automate clinical documentation, ambient scribing, medical coding, claims processing, prior authorization, and revenue cycle workflows using generative AI, speech recognition, and intelligent agents.
+
+**Examples** include Epic Systems (Ergo, Art, Emmie, Penny), Oracle Health (Cerner Clinical AI Agent), Nuance DAX Copilot (now Microsoft Dragon Copilot), Abridge, Suki AI, Ambience Healthcare, Nabla Copilot, DeepScribe, Augmedix, and Innovaccer (the category leaders).
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom EHR integration, and open healthcare data processing — ideal for health systems, developers, and researchers building transparent healthcare automation solutions.
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+- **[Epic Systems (Ergo, Art, Emmie, Penny)](https://www.epic.com/)**  
+  Comprehensive healthcare AI platform spanning patient engagement (Emmie), clinician co-pilot (Art), revenue cycle (Penny), and predictive analytics (Cosmos/CoMET).
+
+- **[Oracle Health Clinical AI Agent (Cerner)](https://www.oracle.com/health/)**  
+  EHR-embedded AI agent for ambient documentation, automated coding, chart review, order drafting, and voice-enabled nursing workflows across 30+ specialties.
+
+- **[Microsoft Dragon Copilot (Nuance DAX)](https://www.nuance.com/healthcare.html)**  
+  AI-powered ambient clinical documentation built on Dragon speech heritage, now integrated with Epic and other major EHRs under Microsoft's platform; generates draft notes from patient-clinician conversations .
+
+- **[Abridge](https://www.abridge.com/)**  
+  Enterprise-grade generative AI platform for clinical conversations with emphasis on note traceability and summarization, targeting large health systems with Epic integration .
+
+- **[Suki AI](https://www.suki.ai/)**  
+  EHR-agnostic AI clinical assistant for ambient documentation, dictation, and command-style actions with integrations across Epic, Oracle Health, athenahealth, and MEDITECH .
+
+- **[Ambience Healthcare](https://www.ambiencehealthcare.com/)**  
+  Enterprise clinical intelligence platform pairing ambient note generation with AutoCDI coding support for revenue cycle teams; sold as a full clinical platform to health systems .
+
+- **[Nabla Copilot](https://www.nabla.com/)**  
+  Ambient AI scribe widely adopted across health systems, with cited adoption by 85,000+ clinicians across 130+ organizations; offers Epic-grade write-back and specialty templates .
+
+- **[DeepScribe](https://www.deepscribe.ai/)**  
+  AI medical scribe capturing visits and producing structured documentation in the EHR; targets the same ambient-scribing workflow as other enterprise platforms .
+
+- **[Augmedix](https://www.augmedix.com/)**  
+  Human-augmented scribing platform combining remote medical scribes with AI assistance, offering an alternative to fully automated ambient documentation .
+
+- **[Innovaccer MediSuite-AI-Agent](https://innovaccer.com/)**  
+  Automates hospital and health insurance claiming workflows including coding, form generation, and claims processing (see open-source implementations below).
+
+## Open-Source GitHub Projects
+
+- **[MediAuth-AI](https://github.com/JainRamyak/MediAuth-AI)**  
+  Multi-agent AI system using LangGraph that autonomously manages insurance prior authorization — from patient intake to generating auth letters and auto-filing appeals. Includes 7 specialized agents for intake, medical analysis, policy intelligence, justification writing, submission monitoring, denial appeals, and claims validation .
+
+- **[Health Agents Collective](https://github.com/micklynch/health-agents-collective)**  
+  Multi-agent healthcare AI system implementing Google's A2A (Agent-to-Agent) protocol with FHIR integration. Features triage nurse functionality, FHIR record lookup, and a Finance Agent for medical coding (CPT/HCPCS/ICD-10), EDI X12 claim submission (837P), claim status (276/277), remittance (835), denial management, and appeals .
+
+- **[OMRS AI Playground](https://github.com/pmanko/omrs-ai-playground)**  
+  Comprehensive healthcare AI research platform demonstrating multi-agent architectures, A2A protocols, MCP tool integration, and medical AI applications. Integrates OpenMRS FHIR R4 for live EMR data access, population health analytics via Spark SQL, and patient longitudinal records .
+
+- **[MediAssist AI-Powered Scribe](https://github.com/garvit-010/MediAssist_AI_Powered_Scribe)**  
+  Full-stack role-based medical documentation system generating dual-purpose clinical intelligence: patient-friendly summaries and structured SOAP notes. Uses Llama 3 via Ollama for local AI privacy and PostgreSQL for enterprise-grade storage .
+
+- **[AI-Enabled Healthcare Management System](https://github.com/mabdulre9/ai-enabled-healthcare-system)**  
+  Privacy-first EMR with 100% offline AI powered by Ollama. Features complete EMR functionality, offline clinical assistant, report generation, and FHIR R4 import/export .
+
+- **[MediSuite-Ai-Agent](https://github.com/ahmedmansour5/MediSuite-Ai-Agent)**  
+  Medical AI agent automating hospital/insurance claiming workflows with ICD-10/CPT-4 coding, CMS-1500 generation, and document OCR processing.
+
+- **[Patient Intake Summarizer](https://github.com/kennedyraju55/patient-intake-summarizer)**  
+  HIPAA-friendly medical AI tool using local Gemma 4 LLM via Ollama for clinical intake form summarization, medical history extraction, and risk factor identification — 100% local with zero patient data leaving the machine .
+
+- **[OpenEMR](https://github.com/openemr/openemr)**  
+  Open-source electronic health records system currently pursuing ONC HTI-1 certification with AI and decision support transparency requirements, USCDI Version 3 support, and FHIR APIs .
+
+- **[AutomatedRCM Billing Tools MCP Server](https://github.com/laureennicholson635/automatedrcm-billing-mcp)**  
+  MCP server providing medical-billing intelligence for AI agents: prior-auth determinations, claim-denial decoding, unpaid-claim triage, appeal assessments, and PHI de-identification demo .
+
+- **[SmartChart Suite](https://github.com/SmartChartSuite)**  
+  HHS-compliant open-source framework for automated chart abstraction and disease surveillance using FHIR-based structured and unstructured data processing; includes registry capabilities integrable with population-level analytics frameworks .
+
+- **[Fasten Health](https://github.com/fastenhealth)**  
+  Open-source FHIR-based platform with tools including `gofhir-models` (Go client library for FHIR R4), `fhir-react` (React components for FHIR resources), and `folio` (PDF library for medical record exports) .
+
+### Additional Strong Open-Source Options
+
+- **[AI-Medical-Scribe](https://github.com/forever-experimental/AI-Medical-Scribe)** — Using Whisper to transcribe doctor/patient visits and AI to automate SOAP note taking .
+- **[speak-note-code](https://github.com/Rroopesh55/speak-note-code)** — End-to-end AI pipeline transcribing doctor–patient conversations, masking PHI, generating structured SOAP notes using Gemini, and predicting ICD/CPT codes .
+- **[1984Doc/AI-Scribe](https://github.com/1984Doc/AI-Scribe)** — Medical scribe capable of creating SOAP notes running Whisper and Kobold based on patient conversation .
+- **[Open Nursing Core (ONC)](https://github.com/ClinyQAi/open-nursing-core-ig)** — Open-source Relational AI for nursing with specialized LLM for care plan generation and nursing documentation audit.
+- **[openIMIS Claims-AI Module](https://github.com/openimis)** — Open-source social health protection management with AI-powered claims processing, interoperable with HL7 FHIR.
+- **[Medplum](https://github.com/medplum/medplum)** — Open-source FHIR-native healthcare platform for building custom AI automation on standardized data.
+- **[LangChain Healthcare Templates](https://github.com/langchain-ai/langchain)** — Framework templates for building clinical documentation and claims agents.
+- **[FHIR Agents & Tools](https://github.com/search?q=fhir+ai+agent)** — Community projects for FHIR-based AI agent workflows.
+- **[Whisper + LLM Clinical Notes](https://github.com/search?q=whisper+clinical+notes)** — Various community implementations combining OpenAI Whisper with LLMs for ambient scribing.
+
+**Frameworks for building custom systems**: Combine **Medplum**, **OpenMRS**, **Fasten Health**, **LangGraph**, and **PostgreSQL** with **Ollama** or **OpenAI-compatible endpoints** for self-hosted healthcare automation platforms. For coding and billing automation, integrate **MediAuth-AI** or **Health Agents Collective** Finance Agent with your existing EHR via FHIR APIs.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Healthcare AI tools must comply with HIPAA, GDPR, and local medical data regulations. ONC HTI-1 transparency requirements now mandate algorithm disclosure for certified health IT modules .
+- Self-hosted open-source solutions require proper security auditing, encryption, and compliance validation before clinical use.
+- Always verify that any AI-assisted clinical decision support maintains clinician oversight and audit trails as required by ONC HTI-1 source attribute and intervention transparency rules .
+
+---
+
+**Made for health systems, clinical informatics teams, revenue cycle leaders, and healthcare developers.**  
+Let's make healthcare automation more open, transparent, and accessible.

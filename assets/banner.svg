@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="50%" stop-color="#0b172a" />
+      <stop offset="100%" stop-color="#041b2d" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .pulse-line {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: dash 5s linear infinite;
+    }
+    @keyframes dash {
+      0% { stroke-dashoffset: 1200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .flow-dot {
+      animation: moveFlow 6s ease-in-out infinite alternate;
+    }
+    @keyframes moveFlow {
+      0% { transform: translateY(0px); opacity: 0.3; }
+      50% { transform: translateY(-12px); opacity: 0.8; }
+      100% { transform: translateY(0px); opacity: 0.3; }
+    }
+    .pulse-beacon {
+      animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; transform: scale(0.98); }
+      50% { opacity: 0.7; transform: scale(1.02); }
+    }
+    .card-float-1 {
+      animation: float1 4s ease-in-out infinite alternate;
+    }
+    @keyframes float1 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+    .card-float-2 {
+      animation: float2 5s ease-in-out infinite alternate;
+    }
+    @keyframes float2 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(8px); }
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="420" rx="18" fill="url(#bgGrad)" />
+
+  <!-- Technical Grid Background -->
+  <g opacity="0.12">
+    <path d="M0,60 H1200 M0,120 H1200 M0,180 H1200 M0,240 H1200 M0,300 H1200 M0,360 H1200" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 8" />
+    <path d="M120,0 V420 M240,0 V420 M360,0 V420 M480,0 V420 M600,0 V420 M720,0 V420 M840,0 V420 M960,0 V420 M1080,0 V420" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Dynamic Glowing ECG / Medical Pulse Graph (Background Animation) -->
+  <path class="pulse-line" d="M0,330 L300,330 L340,330 L360,290 L380,380 L405,240 L430,370 L445,310 L470,330 L750,330 L770,300 L790,360 L810,260 L830,370 L850,330 L1200,330" fill="none" stroke="#00f2fe" stroke-width="2.5" opacity="0.45" filter="url(#subtleGlow)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="90" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1020" cy="320" r="160" fill="#06b6d4" opacity="0.07" filter="url(#glow)" />
+  <circle cx="600" cy="200" r="180" fill="#6366f1" opacity="0.05" filter="url(#glow)" />
+
+  <!-- Floating Dynamic Tech Cards (Placed to sides/corners to protect center text) -->
+  <g class="card-float-1" transform="translate(930, 45)">
+    <rect width="220" height="74" rx="12" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4" filter="url(#subtleGlow)" />
+    <circle cx="28" cy="37" r="14" fill="#0284c7" opacity="0.3" />
+    <text x="28" y="42" font-size="16" text-anchor="middle" fill="#38bdf8">🎙️</text>
+    <text x="54" y="32" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Ambient Scribes</text>
+    <text x="54" y="52" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Real-Time SOAP Notes</text>
+  </g>
+
+  <g class="card-float-2" transform="translate(950, 140)">
+    <rect width="200" height="70" rx="12" fill="url(#cardGrad1)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="26" cy="35" r="14" fill="#059669" opacity="0.3" />
+    <text x="26" y="40" font-size="16" text-anchor="middle" fill="#34d399">⚡</text>
+    <text x="50" y="30" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">RCM &amp; Claims AI</text>
+    <text x="50" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Autonomous Prior Auth</text>
+  </g>
+
+  <g class="card-float-1" transform="translate(910, 230)">
+    <rect width="240" height="70" rx="12" fill="url(#cardGrad1)" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="28" cy="35" r="14" fill="#9333ea" opacity="0.3" />
+    <text x="28" y="40" font-size="16" text-anchor="middle" fill="#c084fc">🏥</text>
+    <text x="54" y="30" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">HL7 FHIR R4 &amp; EHR</text>
+    <text x="54" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Epic &amp; Cerner Integration</text>
+  </g>
+
+  <!-- Interactive / Floating Pill Badges (Left Corner) -->
+  <g transform="translate(70, 48)">
+    <rect width="180" height="32" rx="16" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="16" cy="16" r="5" fill="#38bdf8" class="pulse-beacon" />
+    <text x="30" y="21" class="badge-text" fill="#38bdf8">CLINICAL AI WORKFLOWS</text>
+  </g>
+
+  <!-- MAIN FOREGROUND HERO CONTENT (Ensured 100% clear, visible, sharp) -->
+  <!-- Title Cross Icon & Text -->
+  <g transform="translate(70, 140)">
+    <!-- Healthcare AI Caduceus/Cross Motif -->
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="url(#cyanGrad)" />
+    <path d="M28,15 V41 M15,28 H41" stroke="#041b2d" stroke-width="6" stroke-linecap="round" />
+    <circle cx="28" cy="28" r="4" fill="#ffffff" />
+    
+    <text x="76" y="42" class="title-text" font-size="44">Awesome Healthcare AI Automation</text>
+  </g>
+
+  <!-- Subtitle and Description in Foreground -->
+  <text x="70" y="235" class="subtitle-text" font-size="20" font-weight="500" fill="#e2e8f0">
+    Curated Hub for Ambient Medical Scribes, Autonomous Revenue Cycle &amp; Clinical NLP
+  </text>
+  <text x="70" y="268" class="subtitle-text" font-size="15" fill="#94a3b8">
+    Production-grade SaaS platforms, self-hosted open-source agents, FHIR R4 pipelines &amp; ONC HTI-1 certified architectures
+  </text>
+
+  <!-- Capability Badges / Tags Bar -->
+  <g transform="translate(70, 310)">
+    <!-- Pill 1: Ambient Clinical Scribing -->
+    <g transform="translate(0, 0)">
+      <rect width="184" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="18" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">✨ Ambient Scribing</text>
+    </g>
+
+    <!-- Pill 2: Medical Coding (ICD-10/CPT) -->
+    <g transform="translate(196, 0)">
+      <rect width="184" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="18" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#34d399">🩺 ICD-10 &amp; CPT Coding</text>
+    </g>
+
+    <!-- Pill 3: Autonomous Prior-Auth -->
+    <g transform="translate(392, 0)">
+      <rect width="176" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="18" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#f472b6">📑 Prior Auth AI</text>
+    </g>
+
+    <!-- Pill 4: SMART on FHIR R4 -->
+    <g transform="translate(580, 0)">
+      <rect width="170" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="18" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">⚡ SMART on FHIR</text>
+    </g>
+  </g>
+
+  <!-- Subtle Bottom Brand Accent Line -->
+  <rect x="0" y="415" width="1200" height="5" fill="url(#cyanGrad)" />
+</svg>

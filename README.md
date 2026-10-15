@@ -411,3 +411,102 @@ Thank you for exploring **Awesome Healthcare AI Automation**! If you find this c
 </p>
 # Awesome-Healthcare-AI-Automation
 
+# Top Healthcare AI Automation Tools Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Clinical Documentation, Revenue Cycle Automation & Healthcare Intelligence*  
+**Last updated: March 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Healthcare AI Automation**. These tools automate clinical documentation, ambient scribing, medical coding, claims processing, prior authorization, and revenue cycle workflows using generative AI, speech recognition, and intelligent agents.
+
+**Examples** include Epic Systems (Ergo, Art, Emmie, Penny), Oracle Health (Cerner Clinical AI Agent), Nuance DAX Copilot, Abridge, Suki AI, Ambience Healthcare, Nabla Copilot, DeepScribe, Augmedix, and Innovaccer (the category leaders).
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom EHR integration, and open healthcare data processing — ideal for health systems, developers, and researchers building transparent healthcare automation solutions.
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+- **[Epic Systems (Ergo, Art, Emmie, Penny)](https://www.epic.com/)**  
+  Comprehensive healthcare AI platform spanning patient engagement (Emmie), clinician co-pilot (Art), revenue cycle (Penny), and predictive analytics (Cosmos/CoMET) .
+
+- **[Oracle Health Clinical AI Agent (Cerner)](https://www.oracle.com/health/)**  
+  EHR-embedded AI agent for ambient documentation, automated coding, chart review, order drafting, and voice-enabled nursing workflows across 30+ specialties .
+
+- **[Nuance DAX Copilot](https://www.nuance.com/healthcare.html)**  
+  AI-powered ambient clinical documentation integrated with Epic and other major EHRs, generating draft notes in seconds from patient-clinician conversations .
+
+- **[Abridge](https://www.abridge.com/)**  
+  Enterprise-grade AI platform for clinical conversations with integrated clinical decision support, evidence from NEJM/JAMA, and support for 50+ specialties .
+
+- **[Suki AI](https://www.suki.ai/)**  
+  AI clinical assistant for ambient documentation, dictation, coding support, and order staging with deep EHR integrations including Epic, Oracle Health, athenahealth, and MEDITECH .
+
+- **[Ambience Healthcare](https://www.ambiencehealthcare.com/)**  
+  Clinical intelligence platform spanning documentation, revenue integrity, patient engagement (Kait), care orchestration, and clinical research with performance-based contracts .
+
+- **[Nabla Copilot](https://www.nabla.com/)**  
+  Ambient AI scribe shown in randomized trials to reduce time-in-note and improve clinician burnout metrics; integrates with major EHR systems .
+
+- **[DeepScribe](https://www.deepscribe.ai/)**  
+  Ambient AI specialized for oncology documentation, capturing 3+ million cancer care visits annually with oncology-specific EMR integrations (iKnowMed, OncoEMR) .
+
+- **[Augmedix](https://www.augmedix.com/)**  
+  Ambient medical documentation platform with customizable AI automation levels from self-service to full-service, specialty-tuned for emergency medicine and oncology .
+
+- **[Innovaccer MediSuite-AI-Agent](https://innovaccer.com/)**  
+  Automates hospital and health insurance claiming workflows including coding, form generation, and claims processing (see open-source implementation below) .
+
+## Open-Source GitHub Projects
+
+- **[MediSuite-Ai-Agent](https://github.com/ahmedmansour5/MediSuite-Ai-Agent)**  
+  Medical AI agent automating hospital/insurance claiming workflows with ICD-10/CPT-4 coding, CMS-1500 generation, and document OCR processing .
+
+- **[Phlox](https://github.com/bloodworks-io/phlox)**  
+  Local-first, open-source AI medical scribe with built-in patient management, ambient note generation, live agent drafting, and MCP server support for external tools .
+
+- **[AI Medical Billing App](https://github.com/Unmesh-Gohel/ai-medical-billing-app)**  
+  HIPAA-compliant medical billing system with CrewAI agents for patient registration, HL7 FHIR integration, and EDI claims processing .
+
+- **[Open Nursing Core (ONC)](https://github.com/ClinyQAi/open-nursing-core-ig)**  
+  Open-source Relational AI for nursing with specialized LLM for care plan generation, NANDA-I mapping, and nursing documentation audit .
+
+- **[openIMIS Claims-AI Module](https://github.com/openimis)**  
+  Open-source social health protection management with AI-powered claims processing, interoperable with HL7 FHIR and DCI standards .
+
+### Additional Strong Open-Source Options
+
+- **[OpenMRS](https://github.com/openmrs)** — Open-source medical record system with extensible modules for clinical AI integration.
+- **[Medplum](https://github.com/medplum/medplum)** — Open-source FHIR-native healthcare platform for building custom AI automation on top of standardized data.
+- **[LangChain Healthcare Templates](https://github.com/langchain-ai/langchain)** — Framework templates for building clinical documentation and claims agents.
+- **[FHIR Agents & Tools](https://github.com/search?q=fhir+ai+agent)** — Community projects for FHIR-based AI agent workflows.
+- **[Whisper + LLM Clinical Notes](https://github.com/search?q=whisper+clinical+notes)** — Various community implementations combining OpenAI Whisper with LLMs for ambient scribing.
+- **[Medical Coding Open Datasets & Tools](https://github.com/search?q=icd10+cpt+mapping)** — Libraries for ICD-10/CPT mapping, validation, and automated coding suggestions.
+
+**Frameworks for building custom systems**: Combine **Medplum**, **OpenMRS**, **Phlox**, **LangChain**, and **PostgreSQL** with **Ollama** or **OpenAI-compatible endpoints** for self-hosted healthcare automation platforms.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Healthcare AI tools must comply with HIPAA, GDPR, and local medical data regulations.
+- Self-hosted open-source solutions require proper security auditing, encryption, and compliance validation before clinical use.
+
+---
+
+**Made for health systems, clinical informatics teams, revenue cycle leaders, and healthcare developers.**  
+Let's make healthcare automation more open, transparent, and accessible.

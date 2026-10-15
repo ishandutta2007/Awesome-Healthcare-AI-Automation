@@ -1,7 +1,3 @@
-# Awesome-Healthcare-AI-Automation
-
-# Awesome-Healthcare-AI-Automation
-
 # 🎬 Awesome Healthcare AI Automation
 
 
@@ -608,3 +604,5 @@ Star the repo if you find it useful!
 **Made for health systems, clinical informatics teams, revenue cycle leaders, and healthcare developers.**  
 
 Let's make healthcare automation more open, transparent, and accessible.
+# Awesome-Healthcare-AI-Automation
+
